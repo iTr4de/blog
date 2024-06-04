@@ -1,0 +1,51 @@
+'''
+auth: PierB
+date: June 4th, 2024
+description: blog post as a demo to GenAI complex report comprehension
+version: 0.0.3
+license: MIT 
+'''
+
+import streamlit as st
+
+# Streamlit app
+st.title("Private Investment in Infrastructure - Banque Mondiale 2023 Report Analysis")
+st.markdown("""
+### Complex Data Explained with GenAI
+___
+        
+### An Exercise on the World Bank 2023 Report on Private Investment in Infrastructure, their Consequences, and the Private Sector ROI
+___
+##### Understanding the intricacies of private investment in infrastructure can be daunting. However, with the power of GenAI, we can break down and analyze these complex datasets to reveal insightful trends and impacts.
+""")
+
+# Table of Key Highlights
+st.markdown("#### Key Highlights")
+key_highlights = [
+    {"Point": "Total PPI Investment", "Description": "Total investment commitments for 2023", "Situation": "$86.0 billion", "LY Compared": "Decreased by 5% from $91.3 billion in 2022", "Additional Details": "Number of projects increased from 260 to 322"},
+    {"Point": "East Asia and the Pacific (EAP)", "Description": "Region with highest investment increase", "Situation": "$51.4 billion", "LY Compared": "Increased by 28% from previous year", "Additional Details": "Driven by investments in China and the Philippines"},
+    {"Point": "Latin America and the Caribbean (LAC)", "Description": "Region with significant investment decrease", "Situation": "$15.8 billion", "LY Compared": "Decreased by 43% from previous year", "Additional Details": "Sharp decline due to reduced investments in Brazil and Mexico"},
+]
+st.table(key_highlights)
+
+# Table of Major Private Investors
+st.markdown("#### Major Private Investors")
+major_investors = [
+    {"Investor Name": "Blackstone", "Activity Description": "Private equity firm investing in infrastructure", "Investment Valuation": "$2 billion", "Expected ROI": "8-12%", "Duration of Investment": "10-15 years", "Interest Rate (%)": "6-8%", "Country of Investment": "USA, India", "Project Type": "Energy, Transport"},
+    {"Investor Name": "Brookfield Asset Management", "Activity Description": "Global asset manager with infrastructure focus", "Investment Valuation": "$3 billion", "Expected ROI": "10-15%", "Duration of Investment": "8-12 years", "Interest Rate (%)": "5-7%", "Country of Investment": "Brazil, Canada", "Project Type": "Renewable Energy"},
+    {"Investor Name": "Global Infrastructure Partners (GIP)", "Activity Description": "Specialized infrastructure fund", "Investment Valuation": "$2.5 billion", "Expected ROI": "12-18%", "Duration of Investment": "5-10 years", "Interest Rate (%)": "7-9%", "Country of Investment": "UK, India", "Project Type": "Airports, Ports"},
+]
+st.table(major_investors)
+
+# Insert a report URL link
+st.markdown("For more details, visit the [World Bank PPI Database](https://ppi.worldbank.org).")
+
+
+# Footer
+st.markdown("""
+---
+##### with BrightNTech.app by 7 milestone
+###### embrace the power of AI to simplify and visualize complex data, fostering a deeper understanding of global investment trends. Engage with us for more insights!
+
+#GenAI #ComplexDataComprehension #Innovation #DataAnalysis #AIinFinance #GlobalEconomy #InvestmentTrends
+""")
